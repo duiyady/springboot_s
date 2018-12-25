@@ -12,7 +12,7 @@ import java.io.IOException;
  * 在spring的配置中
  * <servlet>
  *     <servlet-name>firstServlet</servlet-name>
- *     <servlet-class>com.duiya.study.ServletTest</servlet-class>
+ *     <servlet-class>com.duiya.study.FirstServlet</servlet-class>
  * </servlet>
  * <servlet-mapping>
  *     <servlet-name>firstServlet</servlet-name>
@@ -22,9 +22,10 @@ import java.io.IOException;
  */
 
 @WebServlet(name = "firstServlet", urlPatterns = "/servlet1")
-public class ServletTest extends HttpServlet {
+public class FirstServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("first servlet");
     }
 }
+
