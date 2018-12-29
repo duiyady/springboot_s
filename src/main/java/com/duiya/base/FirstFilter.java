@@ -1,4 +1,4 @@
-package com.duiya.study;
+package com.duiya.base;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;

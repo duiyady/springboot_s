@@ -1,4 +1,4 @@
-package com.duiya.study;
+package com.duiya.base;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -12,7 +12,7 @@ import java.io.IOException;
  * 在spring的配置中
  * <servlet>
  *     <servlet-name>firstServlet</servlet-name>
- *     <servlet-class>com.duiya.study.FirstServlet</servlet-class>
+ *     <servlet-class>com.duiya.base.FirstServlet</servlet-class>
  * </servlet>
  * <servlet-mapping>
  *     <servlet-name>firstServlet</servlet-name>

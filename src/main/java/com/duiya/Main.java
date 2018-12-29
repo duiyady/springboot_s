@@ -3,22 +3,18 @@ package com.duiya;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.alibaba.fastjson.support.config.FastJsonConfig;
 import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
-import com.duiya.study.SecondFilter;
-import com.duiya.study.SecondListener;
-import com.duiya.study.SecondServlet;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.http.HttpMessageConverters;
-import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.boot.web.servlet.ServletComponentScan;
-import org.springframework.boot.web.servlet.ServletListenerRegistrationBean;
-import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
 
 
 //spring整合servlet filter等第一种方式
 @SpringBootApplication
 @ServletComponentScan  //在springboot启动时会扫描@WebServlet @WebFilter等并将这些类实例化
+@MapperScan("com.duiya.mapper.*")
 public class Main {
     //fastjson
     @Bean

@@ -7,6 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.annotation.Resource;
+import java.util.List;
+import java.util.Map;
+
 @Service
 @Transactional
 public class UserServiceImpl implements UserService {
@@ -17,5 +21,10 @@ public class UserServiceImpl implements UserService {
     public int addUser(User user) {
         int result = userMapper.insert(user);
         return result;
+    }
+
+    @Override
+    public List<Map<String, Object>> getAll() {
+        return userMapper.getAll();
     }
 }
