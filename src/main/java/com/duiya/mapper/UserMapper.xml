@@ -3,12 +3,11 @@
 
 <mapper namespace="com.duiya.mapper.UserMapper">
 
-    <insert id="insert" parameterType="com.duiya.pojo.User">
+    <insert id="insert" parameterType="User">
 		insert into user(user_id,user_name) values(#{id},#{name})
 	</insert>
 	
 	<select id="getAll" resultType="map">
 		select * from user
 	</select>
-
 </mapper>

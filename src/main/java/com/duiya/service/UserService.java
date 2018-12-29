@@ -7,7 +7,7 @@ import java.util.Map;
 
 public interface UserService {
 
-    int addUser(User user);
+    void addUser(User user);
 
     List<Map<String, Object>> getAll();
 }

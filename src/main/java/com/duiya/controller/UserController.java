@@ -24,8 +24,7 @@ public class UserController {
     @ResponseBody
     public JSONObject addUser(@RequestParam(name="id")int id,
                               @RequestParam(name = "name", required = false) String name){
-        int result = userService.addUser(new User(id, name));
-        System.out.println(result);
+        userService.addUser(new User(id, name));
         JSONObject jo = new JSONObject();
         jo.put("msg", "ok");
         jo.put("lll", "dafa");

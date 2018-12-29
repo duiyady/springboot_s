@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Bean;
 //spring整合servlet filter等第一种方式
 @SpringBootApplication
 @ServletComponentScan  //在springboot启动时会扫描@WebServlet @WebFilter等并将这些类实例化
-@MapperScan("com.duiya.mapper.*")
+@MapperScan("com.duiya.mapper")
 public class Main {
     //fastjson
     @Bean
