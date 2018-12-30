@@ -2,7 +2,7 @@ package com.duiya.usersjpatest;
 
 import com.duiya.Main;
 import com.duiya.dao.UsersRepository;
-import com.duiya.dao.UsersRespositoryByName;
+import com.duiya.dao.UsersRepositoryByName;
 import com.duiya.pojo.Users;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -14,11 +14,11 @@ import java.util.List;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest(classes = {Main.class})
-public class UsersRespositoryTest {
+public class UsersRepositoryTest {
     @Autowired
     private UsersRepository usersRepository;
     @Autowired
-    private UsersRespositoryByName usersRespositoryByName;
+    private UsersRepositoryByName usersRespositoryByName;
 
     @Test
     public void testSave(){

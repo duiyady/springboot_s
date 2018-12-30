@@ -14,7 +14,7 @@ public class Users {
     private String name;
 
     @Column(name="address")
-    private String adress;
+    private String address;
 
     @Column(name="age")
     private Integer age;
@@ -24,7 +24,7 @@ public class Users {
         return "Users{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", adress='" + adress + '\'' +
+                ", adress='" + address + '\'' +
                 ", age=" + age +
                 '}';
     }
@@ -35,7 +35,7 @@ public class Users {
     public Users(Integer id, String name, String adress, Integer age) {
         this.id = id;
         this.name = name;
-        this.adress = adress;
+        this.address = adress;
         this.age = age;
     }
 
@@ -56,11 +56,11 @@ public class Users {
     }
 
     public String getAdress() {
-        return adress;
+        return address;
     }
 
     public void setAdress(String adress) {
-        this.adress = adress;
+        this.address = adress;
     }
 
     public Integer getAge() {
