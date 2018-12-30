@@ -23,7 +23,7 @@ public class UsersRepositoryTest {
     @Test
     public void testSave(){
         Users users = new Users();
-        users.setAdress("山东");
+        users.setAddress("山东");
         users.setAge(39);
         users.setName("哇咔咔");
         this.usersRepository.save(users);

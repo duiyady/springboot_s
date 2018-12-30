@@ -19,12 +19,32 @@ public class Users {
     @Column(name="age")
     private Integer age;
 
+    @ManyToOne
+    @JoinColumn(name = "roles_id")
+    private Roles roles;
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public Roles getRoles() {
+        return roles;
+    }
+
+    public void setRoles(Roles roles) {
+        this.roles = roles;
+    }
+
     @Override
     public String toString() {
         return "Users{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", adress='" + address + '\'' +
+                ", address='" + address + '\'' +
                 ", age=" + age +
                 '}';
     }
@@ -53,14 +73,6 @@ public class Users {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getAdress() {
-        return address;
-    }
-
-    public void setAdress(String adress) {
-        this.address = adress;
     }
 
     public Integer getAge() {

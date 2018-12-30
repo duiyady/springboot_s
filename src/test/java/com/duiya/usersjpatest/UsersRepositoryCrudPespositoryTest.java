@@ -24,7 +24,7 @@ public class UsersRepositoryCrudPespositoryTest {
         Users user = new Users();
         user.setName("来了老弟");
         user.setAge(24);
-        user.setAdress("重庆");
+        user.setAddress("重庆");
         this.usersRespositoryCrudRespository.save(user);
     }
 
@@ -54,7 +54,7 @@ public class UsersRepositoryCrudPespositoryTest {
     public void TestUpdate(){
         Users users = new Users();
         users.setName("来了老弟啊");
-        users.setAdress("北京");
+        users.setAddress("北京");
         users.setId(7);
         users.setAge(3);
         this.usersRespositoryCrudRespository.save(users);
