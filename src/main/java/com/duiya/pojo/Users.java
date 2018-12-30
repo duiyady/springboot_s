@@ -1,10 +1,11 @@
 package com.duiya.pojo;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name="t_users")
-public class Users {
+public class Users implements Serializable {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     @Column(name="id")

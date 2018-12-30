@@ -1,7 +1,7 @@
 package com.duiya.usersjpatest;
 
 import com.duiya.Main;
-import com.duiya.dao.UsersRepositoryCrudRepository;
+import com.duiya.dao.UsersCrudRepository;
 import com.duiya.pojo.Users;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -17,7 +17,7 @@ import java.util.Optional;
 @SpringBootTest(classes = {Main.class})
 public class UsersRepositoryCrudPespositoryTest {
     @Autowired
-    private UsersRepositoryCrudRepository usersRespositoryCrudRespository;
+    private UsersCrudRepository usersRespositoryCrudRespository;
 
     @Test
     public void testSave(){

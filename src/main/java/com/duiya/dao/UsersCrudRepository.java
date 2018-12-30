@@ -6,6 +6,6 @@ import org.springframework.data.repository.CrudRepository;
 /**
  * CrudRespository继承了Respository接口
  */
-public interface UsersRepositoryCrudRepository extends CrudRepository<Users, Integer> {
+public interface UsersCrudRepository extends CrudRepository<Users, Integer> {
 
 }

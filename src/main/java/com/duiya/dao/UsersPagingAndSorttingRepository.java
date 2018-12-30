@@ -6,5 +6,5 @@ import org.springframework.data.repository.PagingAndSortingRepository;
 /**
  * PagingAndSortingRepository 继承CrubRespository
  */
-public interface UsersRepositoryPagingAndSorttingRepository extends PagingAndSortingRepository<Users, Integer> {
+public interface UsersPagingAndSorttingRepository extends PagingAndSortingRepository<Users, Integer> {
 }

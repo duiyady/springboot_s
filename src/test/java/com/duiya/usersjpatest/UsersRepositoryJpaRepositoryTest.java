@@ -1,7 +1,7 @@
 package com.duiya.usersjpatest;
 
 import com.duiya.Main;
-import com.duiya.dao.UsersRepositoryJpaRepository;
+import com.duiya.dao.UsersJpaRepository;
 import com.duiya.pojo.Users;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -20,7 +20,7 @@ import java.util.List;
 @SpringBootTest(classes = Main.class)
 public class UsersRepositoryJpaRepositoryTest {
     @Autowired
-    private UsersRepositoryJpaRepository usersRepositoryJpaRepository;
+    private UsersJpaRepository usersRepositoryJpaRepository;
 
     @Test
     public void sortTest(){

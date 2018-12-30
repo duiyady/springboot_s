@@ -7,7 +7,7 @@ import org.springframework.data.repository.Repository;
 
 import java.util.List;
 
-public interface UsersRepositoryQueryAnnotation extends Repository<Users, Integer> {
+public interface UsersQueryAnnotation extends Repository<Users, Integer> {
     @Query("from Users where name = :name")
     List<Users> queryByNameUseHQL(String name);
 

@@ -1,7 +1,7 @@
 package com.duiya.usersjpatest;
 
 import com.duiya.Main;
-import com.duiya.dao.UsersRepositoryPagingAndSorttingRepository;
+import com.duiya.dao.UsersPagingAndSorttingRepository;
 import com.duiya.pojo.Users;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -20,7 +20,7 @@ import java.util.List;
 @SpringBootTest(classes = Main.class)
 public class UsersRepositoryPagingAndSortingTest {
     @Autowired
-    private UsersRepositoryPagingAndSorttingRepository pagingAndSorttingRespository;
+    private UsersPagingAndSorttingRepository pagingAndSorttingRespository;
 
     @Test
     public void sortTest(){

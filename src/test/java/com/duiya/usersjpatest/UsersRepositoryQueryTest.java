@@ -1,7 +1,7 @@
 package com.duiya.usersjpatest;
 
 import com.duiya.Main;
-import com.duiya.dao.UsersRepositoryQueryAnnotation;
+import com.duiya.dao.UsersQueryAnnotation;
 import com.duiya.pojo.Users;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -16,7 +16,7 @@ import java.util.List;
 @SpringBootTest(classes = {Main.class})
 public class UsersRepositoryQueryTest {
     @Autowired
-    private UsersRepositoryQueryAnnotation usersRespositoryQuery;
+    private UsersQueryAnnotation usersRespositoryQuery;
 
     @Test
     public void queryByNaneUseSql(){

@@ -6,5 +6,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 /**
  * JpaRepository继承了PagingAndSortingRepository QueryByExampleExecutor
  */
-public interface UsersRepositoryJpaRepository extends JpaRepository<Users, Integer> {
+public interface UsersJpaRepository extends JpaRepository<Users, Integer> {
 }
